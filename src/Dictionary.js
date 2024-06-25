@@ -3,9 +3,10 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results.js";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState("mystery");
+export default function Dictionary(props) {
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
@@ -32,30 +33,41 @@ export default function Dictionary() {
     setResults(response.data);
   }
 
-  return (
-    <div className="Dictionary">
-      <section>
-        <form onSubmit={handleSearch}>
-          <input
-            type="search"
-            placeholder="Type a word here..."
-            autoFocus={true}
-            onChange={handleKeywordChange}
-            className="search-input"
-          />
-          <input
-            type="submit"
-            onSubmit={handleSearch}
-            className="search-button"
-            value="Search"
-          />
-        </form>
-        <div className="hint">
-          e.g. limerence, serendipity, grenadine or other keywords to give you
-          inspiration
-        </div>
-      </section>
-      <Results results={results} />
-    </div>
-  );
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <section>
+          <form onSubmit={handleSearch}>
+            <input
+              type="search"
+              placeholder="Type a word here..."
+              autoFocus={true}
+              onChange={handleKeywordChange}
+              className="search-input"
+            />
+            <input
+              type="submit"
+              onSubmit={handleSearch}
+              className="search-button"
+              value="Search"
+            />
+          </form>
+          <div className="hint">
+            e.g. limerence, serendipity, grenadine or other keywords to give you
+            inspiration
+          </div>
+        </section>
+        <Results results={results} />
+      </div>
+    );
+  } else {
+    load();
+
+    return "Loading";
+  }
 }
