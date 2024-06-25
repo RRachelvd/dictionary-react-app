@@ -11,8 +11,18 @@
 .Results h4 {
   font-size: 25px;
   font-weight: 300;
-  opacity: 90%;
+  opacity: 95%;
+  margin-bottom: 20px;
 }
-.Results p {
-  font-size: 18px;
+
+.Meanings .example {
+  opacity: 50%;
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.Meanings .definition {
+  margin-bottom: 8px;
+  font-size: 17px;
 }

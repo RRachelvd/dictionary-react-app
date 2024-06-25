@@ -45,7 +45,7 @@ export default function Dictionary(props) {
           <form onSubmit={handleSearch}>
             <input
               type="search"
-              placeholder="Type a word here..."
+              placeholder="Type another word here..."
               autoFocus={true}
               onChange={handleKeywordChange}
               className="search-input"
