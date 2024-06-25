@@ -19,10 +19,16 @@
   opacity: 50%;
   font-size: 17px;
   font-style: italic;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .Meanings .definition {
   margin-bottom: 8px;
   font-size: 17px;
+}
+
+@media (max-width: 850px) {
+  .Meanings .example {
+    margin-bottom: 25px;
+  }
 }

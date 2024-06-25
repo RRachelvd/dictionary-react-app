@@ -53,12 +53,12 @@ h4 {
   }
 
   .Dictionary .search-button {
-    font-size: 16px;
+    font-size: 17px;
     padding: 9px 18px 11px 18px;
   }
 
   .Dictionary section {
-    padding: 20px;
-    margin: 20px 10px 10px 10px;
+    padding: 20px 23px 20px 25px;
+    margin: 13px 12px 10px 12px;
   }
 }

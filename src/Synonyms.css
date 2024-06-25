@@ -1,6 +1,6 @@
 .Synonyms li {
   list-style: none;
-  display: inline;
+  display: inline-block;
   margin: 18px;
   opacity: 85%;
   color: rgb(117, 30, 59);
@@ -13,5 +13,16 @@
 .Synonyms,
 ul {
   padding-left: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+  .Synonyms li {
+    margin: 12px 8px;
+  }
+
+  .Synonyms,
+  ul {
+    margin-bottom: 10px;
+  }
 }

@@ -19,4 +19,8 @@ footer {
   .App {
     width: 100%;
   }
+  footer {
+    margin-top: 50px;
+    padding: 0px 30px;
+  }
 }
