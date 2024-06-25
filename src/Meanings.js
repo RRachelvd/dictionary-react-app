@@ -5,10 +5,7 @@ export default function Meanings(props) {
   return (
     <div className="Meanings">
       <h4>{props.meaning.partOfSpeech}</h4>
-      <p>
-        <strong>Definition: </strong>
-        {props.meaning.definition}
-      </p>
+      <p>{props.meaning.definition}</p>
       <p>
         <em>{props.meaning.example}</em>
       </p>

@@ -2,6 +2,59 @@
   margin-top: 50px;
 }
 
-.Dictionary form {
-  margin-bottom: 30px;
+.Dictionary .search-input {
+  width: 50%;
+  padding: 12px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.Dictionary .search-button {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 11px 22px 14px 22px;
+  margin-left: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 215, 185, 0.91);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Dictionary .hint {
+  font-size: 14px;
+  opacity: 60%;
+  margin-top: 8px;
+}
+
+.Dictionary section {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 25px 32px 45px;
+  border-radius: 6px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.Dictionary h1,
+h2,
+h4 {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .Dictionary {
+    margin-top: 5px;
+  }
+
+  .Dictionary .search-input {
+    width: 65%;
+    font-size: 16px;
+  }
+
+  .Dictionary .search-button {
+    font-size: 16px;
+  }
+
+  .Dictionary section {
+    padding: 20px;
+  }
 }

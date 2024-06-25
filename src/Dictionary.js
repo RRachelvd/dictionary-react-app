@@ -4,17 +4,14 @@ import axios from "axios";
 import Results from "./Results.js";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+  let [keyword, setKeyword] = useState("mystery");
   let [results, setResults] = useState(null);
 
   function handleKeywordChange(event) {
-    console.log(event.target.value);
     setKeyword(event.target.value);
   }
 
-  function search(event) {
-    event.preventDefault();
-
+  function search() {
     //documentation: https://www.shecodes.io/learn/apis/dictionary
 
     let apiKey = "0c98c0be68f4tba31fe26f898obb603d";
@@ -23,16 +20,40 @@ export default function Dictionary() {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function handleSearch(event) {
+    event.preventDefault();
+    search();
+  }
+
   function handleResponse(response) {
     console.log(response.data);
 
     setResults(response.data);
   }
+
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" autoFocus={true} onChange={handleKeywordChange} />
-      </form>
+      <section>
+        <form onSubmit={handleSearch}>
+          <input
+            type="search"
+            placeholder="Type a word here..."
+            autoFocus={true}
+            onChange={handleKeywordChange}
+            className="search-input"
+          />
+          <input
+            type="submit"
+            onSubmit={handleSearch}
+            className="search-button"
+            value="Search"
+          />
+        </form>
+        <div className="hint">
+          e.g. limerence, serendipity, grenadine or other keywords to give you
+          inspiration
+        </div>
+      </section>
       <Results results={results} />
     </div>
   );
