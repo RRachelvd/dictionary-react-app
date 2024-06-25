@@ -22,6 +22,7 @@ export default function Dictionary() {
 
   function handleSearch(event) {
     event.preventDefault();
+
     search();
   }
 
