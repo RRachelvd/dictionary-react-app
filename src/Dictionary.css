@@ -1,3 +1,7 @@
 .Dictionary {
   margin-top: 50px;
 }
+
+.Dictionary form {
+  margin-bottom: 30px;
+}
