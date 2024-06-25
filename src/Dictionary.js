@@ -42,10 +42,11 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
+          <h1>What word is on your mind today?</h1>
           <form onSubmit={handleSearch}>
             <input
               type="search"
-              placeholder="Type another word here..."
+              placeholder="Type something..."
               autoFocus={true}
               onChange={handleKeywordChange}
               className="search-input"
