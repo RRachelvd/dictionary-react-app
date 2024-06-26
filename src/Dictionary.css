@@ -65,7 +65,7 @@ h4 {
   font-weight: 600;
 }
 
-@media (min-width: 420px) and (max-width: 750px) {
+@media (min-width: 430px) and (max-width: 750px) {
   .Dictionary .section-photos {
     display: none;
   }
