@@ -1,0 +1,21 @@
+.Photos .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 12px;
+}
+
+.Photos .row {
+  display: block;
+  margin: 0 auto;
+}
+
+.Photos .photo {
+  border-radius: 6px;
+  width: 295px;
+}
+
+@media (max-width: 850px) {
+  .Photos .grid {
+    grid-template-columns: 1fr;
+  }
+}
