@@ -14,7 +14,7 @@
   width: 295px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 590px) {
   .Photos .grid {
     grid-template-columns: 1fr;
     row-gap: 18px;
@@ -23,5 +23,11 @@
   .Photos .photo {
     border-radius: 6px;
     max-width: 282px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1400px) {
+  .Photos .grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
