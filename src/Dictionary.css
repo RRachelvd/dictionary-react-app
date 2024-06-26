@@ -14,11 +14,18 @@
   font-weight: 600;
   padding: 11px 22px 14px 22px;
   margin-left: 12px;
-  border-radius: 50px;
+  border-radius: 8px;
   border: none;
-  background: rgba(255, 215, 185, 0.91);
+  background: var(--detail-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(117, 30, 59);
+  color: var(--primary-color);
+  transition: all 120ms ease-in-out;
+}
+
+.Dictionary .search-button:hover {
+  background: var(--secondary-color);
+  color: var(--detail-color);
+  cursor: pointer;
 }
 
 .Dictionary .hint {
@@ -28,11 +35,11 @@
 }
 
 .Dictionary section {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 28px 25px 32px 45px;
   border-radius: 6px;
   margin: 20px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .Dictionary .section-photos {
@@ -40,7 +47,7 @@
   padding: 25px 25px 25px 25px;
   border-radius: 6px;
   margin: 20px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .Dictionary h2,
@@ -61,13 +68,13 @@ h4 {
   }
 
   .Dictionary .search-input {
-    width: 65%;
+    width: 62%;
     font-size: 16px;
     padding: 10px 13px;
   }
 
   .Dictionary .search-button {
-    font-size: 17px;
+    font-size: 1px;
     padding: 9px 18px 11px 18px;
   }
 
