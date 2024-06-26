@@ -41,4 +41,7 @@ footer {
     margin-top: 50px;
     padding: 0px 30px;
   }
+  .App .logo {
+    display: none;
+  }
 }
