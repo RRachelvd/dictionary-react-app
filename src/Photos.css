@@ -17,5 +17,11 @@
 @media (max-width: 850px) {
   .Photos .grid {
     grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .Photos .photo {
+    border-radius: 6px;
+    width: 290px;
   }
 }

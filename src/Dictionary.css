@@ -12,7 +12,7 @@
 .Dictionary .search-button {
   font-size: 17px;
   font-weight: 600;
-  padding: 11px 22px 14px 22px;
+  padding: 10px 21px 13px 21px;
   margin-left: 12px;
   border-radius: 8px;
   border: none;
@@ -20,11 +20,14 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--primary-color);
   transition: all 120ms ease-in-out;
+  border: 1px solid var(--detail-color);
 }
 
 .Dictionary .search-button:hover {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: var(--detail-color);
+  border: 1px solid rgb(225, 225, 225);
+  padding: 10px 21px 13px 21px;
   cursor: pointer;
 }
 
@@ -44,7 +47,7 @@
 
 .Dictionary .section-photos {
   background-color: rgb(255, 255, 255);
-  padding: 25px 25px 25px 25px;
+  padding: 30px 25px;
   border-radius: 6px;
   margin: 20px;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.08);
@@ -69,17 +72,21 @@ h4 {
 
   .Dictionary .search-input {
     width: 62%;
-    font-size: 16px;
+    font-size: 15.5px;
     padding: 10px 13px;
   }
 
   .Dictionary .search-button {
-    font-size: 1px;
+    font-size: 16px;
     padding: 9px 18px 11px 18px;
   }
 
   .Dictionary section {
     padding: 20px 23px 20px 25px;
     margin: 13px 12px 10px 12px;
+  }
+
+  .Dictionary .section-photos {
+    padding: 24px 20px;
   }
 }
