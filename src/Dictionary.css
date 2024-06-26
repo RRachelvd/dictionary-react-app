@@ -89,4 +89,8 @@ h4 {
   .Dictionary .section-photos {
     padding: 24px 20px;
   }
+
+  .Dictionary .hint {
+    line-height: 1.2;
+  }
 }
