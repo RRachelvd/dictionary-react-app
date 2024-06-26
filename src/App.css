@@ -19,6 +19,12 @@ a {
   margin: 0 auto;
 }
 
+.App .logo {
+  max-width: 200px;
+  display: block;
+  margin: 50px auto 10px auto;
+}
+
 footer {
   margin-top: 80px;
   margin-bottom: 50px;

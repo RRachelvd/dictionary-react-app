@@ -1,11 +1,17 @@
 import "./App.css";
+import logo from "./logo.png";
 import Dictionary from "./Dictionary.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
-
+      <header className="App-header">
+        <header className="App-header">
+          <a href="https://www.shecodes.io/" target="_blank" rel="noreferrer">
+            <img src={logo} className="logo" alt="SheCodes Logo" />
+          </a>
+        </header>
+      </header>
       <main>
         <Dictionary defaultKeyword="mystery" />{" "}
       </main>
