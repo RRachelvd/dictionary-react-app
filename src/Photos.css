@@ -22,6 +22,6 @@
 
   .Photos .photo {
     border-radius: 6px;
-    width: 290px;
+    max-width: 285px;
   }
 }
