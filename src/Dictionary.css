@@ -71,6 +71,12 @@ h4 {
   }
 }
 
+@media (max-width: 350px) {
+  .Dictionary .section-photos {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .Dictionary {
     margin-top: 5px;
