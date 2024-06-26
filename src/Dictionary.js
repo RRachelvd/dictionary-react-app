@@ -69,7 +69,7 @@ export default function Dictionary(props) {
             />
           </form>
           <div className="hint">
-            e.g. foggy, serendipity, grenadine or other keywords to give you
+            e.g. foggy, bouquet, galaxy or other keywords to give you
             inspiration
           </div>
         </section>
